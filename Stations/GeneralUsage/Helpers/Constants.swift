@@ -8,5 +8,6 @@
 import Foundation
 
 struct Constants {
-  
+  static let baseURL = "https://demo.voltlines.com/"
+  static let gmAPIKey = "AIzaSyCkAxCC3gasmwpNwOejbGRZcDPB67ONVr4"
 }

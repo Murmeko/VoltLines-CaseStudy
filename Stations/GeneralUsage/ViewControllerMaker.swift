@@ -11,6 +11,7 @@ class ViewControllerMaker {}
 
 extension ViewControllerMaker {
   static func mapViewController() -> MapViewController {
-    return MapViewController()
+    let manager = MapManager()
+    return MapViewController(manager: manager)
   }
 }

@@ -27,6 +27,12 @@
 		BF9E003229F6CDBA00C9A20D /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E003129F6CDBA00C9A20D /* Trip.swift */; };
 		BF9E003C29F6D14B00C9A20D /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E003B29F6D14B00C9A20D /* TripListViewController.swift */; };
 		BF9E003F29F6D1A700C9A20D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E003E29F6D1A700C9A20D /* Constants.swift */; };
+		BFB9374B29F707BE00B4DDE1 /* StationsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9374A29F707BE00B4DDE1 /* StationsAPI.swift */; };
+		BFB9374D29F707D100B4DDE1 /* StationsAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9374C29F707D100B4DDE1 /* StationsAPIProvider.swift */; };
+		BFB9374F29F708DE00B4DDE1 /* MapNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9374E29F708DE00B4DDE1 /* MapNetworkManager.swift */; };
+		BFB9375229F7091D00B4DDE1 /* BaseNetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9375129F7091D00B4DDE1 /* BaseNetworkManagerProtocol.swift */; };
+		BFB9375429F7185D00B4DDE1 /* MapMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9375329F7185D00B4DDE1 /* MapMainViewModel.swift */; };
+		BFB9375629F719A400B4DDE1 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9375529F719A400B4DDE1 /* MapManager.swift */; };
 		FEE813F5E25F6A5C71FF7CC7 /* Pods_Stations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE77CB671F4DD930264E710 /* Pods_Stations.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +84,12 @@
 		BF9E003129F6CDBA00C9A20D /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		BF9E003B29F6D14B00C9A20D /* TripListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
 		BF9E003E29F6D1A700C9A20D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BFB9374A29F707BE00B4DDE1 /* StationsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsAPI.swift; sourceTree = "<group>"; };
+		BFB9374C29F707D100B4DDE1 /* StationsAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsAPIProvider.swift; sourceTree = "<group>"; };
+		BFB9374E29F708DE00B4DDE1 /* MapNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapNetworkManager.swift; sourceTree = "<group>"; };
+		BFB9375129F7091D00B4DDE1 /* BaseNetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		BFB9375329F7185D00B4DDE1 /* MapMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMainViewModel.swift; sourceTree = "<group>"; };
+		BFB9375529F719A400B4DDE1 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		E905922840762802173DCC41 /* Pods-Stations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stations.debug.xcconfig"; path = "Target Support Files/Pods-Stations/Pods-Stations.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +209,7 @@
 		BF7EE3F129F6AB6800BA77E6 /* GeneralUsage */ = {
 			isa = PBXGroup;
 			children = (
+				BFB9375029F7090B00B4DDE1 /* GeneralProtocols */,
 				BF9E003D29F6D19B00C9A20D /* Helpers */,
 				BF9E001F29F6C91D00C9A20D /* GeneralViews */,
 				BF7EE3EE29F6AA0D00BA77E6 /* ViewControllerMaker.swift */,
@@ -247,6 +260,7 @@
 		BF9E002B29F6CC9400C9A20D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BFB9375329F7185D00B4DDE1 /* MapMainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -254,6 +268,8 @@
 		BF9E002C29F6CC9C00C9A20D /* GeneralOps */ = {
 			isa = PBXGroup;
 			children = (
+				BFB9374E29F708DE00B4DDE1 /* MapNetworkManager.swift */,
+				BFB9375529F719A400B4DDE1 /* MapManager.swift */,
 			);
 			path = GeneralOps;
 			sourceTree = "<group>";
@@ -261,6 +277,8 @@
 		BF9E002D29F6CCC500C9A20D /* NetworkOps */ = {
 			isa = PBXGroup;
 			children = (
+				BFB9374A29F707BE00B4DDE1 /* StationsAPI.swift */,
+				BFB9374C29F707D100B4DDE1 /* StationsAPIProvider.swift */,
 			);
 			path = NetworkOps;
 			sourceTree = "<group>";
@@ -344,6 +362,14 @@
 				BF9E003E29F6D1A700C9A20D /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BFB9375029F7090B00B4DDE1 /* GeneralProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				BFB9375129F7091D00B4DDE1 /* BaseNetworkManagerProtocol.swift */,
+			);
+			path = GeneralProtocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -621,18 +647,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF9E003229F6CDBA00C9A20D /* Trip.swift in Sources */,
+				BFB9374F29F708DE00B4DDE1 /* MapNetworkManager.swift in Sources */,
+				BFB9375629F719A400B4DDE1 /* MapManager.swift in Sources */,
 				BF9E002129F6C93100C9A20D /* CustomAlertView.swift in Sources */,
 				BF7EE3C329F6990000BA77E6 /* MapViewController.swift in Sources */,
+				BFB9375429F7185D00B4DDE1 /* MapMainViewModel.swift in Sources */,
 				BF9E002329F6C95F00C9A20D /* AlertType.swift in Sources */,
 				BF9E002929F6CAD000C9A20D /* TypeAliases.swift in Sources */,
 				BF9E002529F6CA6900C9A20D /* MapViewController+Setup.swift in Sources */,
 				BF7EE3BF29F6990000BA77E6 /* AppDelegate.swift in Sources */,
 				BF9E003F29F6D1A700C9A20D /* Constants.swift in Sources */,
 				BF9E003029F6CD8D00C9A20D /* Station.swift in Sources */,
+				BFB9374B29F707BE00B4DDE1 /* StationsAPI.swift in Sources */,
 				BF7EE3C129F6990000BA77E6 /* SceneDelegate.swift in Sources */,
+				BFB9374D29F707D100B4DDE1 /* StationsAPIProvider.swift in Sources */,
 				BF9E003C29F6D14B00C9A20D /* TripListViewController.swift in Sources */,
 				BF9E002729F6CA7400C9A20D /* MapViewController+Methods.swift in Sources */,
 				BF7EE3EF29F6AA0D00BA77E6 /* ViewControllerMaker.swift in Sources */,
+				BFB9375229F7091D00B4DDE1 /* BaseNetworkManagerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
