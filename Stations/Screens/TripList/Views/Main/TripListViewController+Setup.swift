@@ -8,6 +8,10 @@
 import UIKit
 
 extension TripListViewController {
+  final func setupGeneralView() {
+    view.backgroundColor = .white
+  }
+  
   final func setupTableView() {
     self.tableView = UITableView(frame: .zero, style: .plain)
     self.tableView.delegate = self

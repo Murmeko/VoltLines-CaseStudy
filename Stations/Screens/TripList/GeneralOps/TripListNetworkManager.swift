@@ -31,7 +31,7 @@ class TripListNetworkManager: TripListNetworkManagerProtocol {
         case .success(let response):
           self.handleResponse(response.data)
         case .failure:
-          let alert = Alert(title: "Network error",
+          let alert = AlertItem(title: "Network error",
                             message: "Please try again.",
                             buttonTitle: "Go Back")
           self.viewModel.showAlertView?(alert)
@@ -41,13 +41,11 @@ class TripListNetworkManager: TripListNetworkManagerProtocol {
   }
   
   private func handleResponse(_ data: Data) {
-    do {
-      let _ = try JSONDecoder().decode(Trip.self, from: data)
-      self.viewModel.station.isBooked = true
+    if let _ = try? JSONDecoder().decode(Trip.self, from: data) {
       self.router.dismiss?()
-      NotificationCenter.default.post(name: Notification.Name("TripBooked"), object: nil)
-    } catch {
-      let alert = Alert(title: "The trip you selected is full.",
+      NotificationCenter.default.post(name: Constants.bookedTripNotificationName, object: nil)
+    } else {
+      let alert = AlertItem(title: "The trip you selected is full.",
                         message: "Please select another trip.",
                         buttonTitle: "Select a Trip")
       self.viewModel.showAlertView?(alert)

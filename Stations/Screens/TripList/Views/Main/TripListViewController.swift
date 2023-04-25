@@ -23,8 +23,8 @@ class TripListViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    setupGeneralView()
     setupTableView()
     setupBindings()
-    view.backgroundColor = .white
   }
 }

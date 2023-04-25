@@ -1,5 +1,5 @@
 //
-//  TripListViewController+Methods.swift
+//  TripListViewController+Bindings.swift
 //  Stations
 //
 //  Created by Hasan Aygünoglu on 25.04.2023.
@@ -17,7 +17,7 @@ extension TripListViewController {
     }
   }
   
-  final func showAlertView() -> (_ alert: Alert) -> Void {
+  final func showAlertView() -> (_ alert: AlertItem) -> Void {
     return { [weak self] alert in
       guard let self = self else { return }
       DispatchQueue.main.async {

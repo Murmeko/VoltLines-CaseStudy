@@ -1,5 +1,5 @@
 //
-//  MapViewController+Methods.swift
+//  MapViewController+Bindings.swift
 //  Stations
 //
 //  Created by Hasan Aygünoglu on 24.04.2023.
@@ -11,7 +11,9 @@ extension MapViewController {
   final func updateMarkers() -> VoidHandler? {
     return { [weak self] in
       guard let self = self else { return }
-      createMarkers(from: manager.viewModel.stations)
+      DispatchQueue.main.async {
+        self.createMarkers(from: self.manager.viewModel.stations)
+      }
     }
   }
   

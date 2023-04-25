@@ -39,13 +39,11 @@ extension StationsAPI: TargetType {
   }
   
   var task: Task {
-    var params: [String: Any] = [:]
-    
     switch apiMethod {
     case .getStations:
       return .requestPlain
-    case .bookingRequest(let stationID, let tripID):
-      return .requestParameters(parameters: params, encoding: URLEncoding.default)
+    case .bookingRequest:
+      return .requestPlain
     }
   }
   

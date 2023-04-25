@@ -9,7 +9,7 @@ import Foundation
 
 protocol TripListMainViewModelProtocol {
   var updateUI: VoidHandler? { get set }
-  var showAlertView: ((_ alert: Alert) -> Void)? { get set }
+  var showAlertView: ((_ alert: AlertItem) -> Void)? { get set }
   
   var station: Station { get set }
   var parser: TripListParserProtocol { get }
@@ -18,7 +18,7 @@ protocol TripListMainViewModelProtocol {
 
 class TripListMainViewModel: TripListMainViewModelProtocol {
   var updateUI: VoidHandler?
-  var showAlertView: ((_ alert: Alert) -> Void)?
+  var showAlertView: ((_ alert: AlertItem) -> Void)?
   
   var station: Station
   let parser: TripListParserProtocol

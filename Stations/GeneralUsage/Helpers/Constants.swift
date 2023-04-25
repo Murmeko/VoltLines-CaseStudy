@@ -13,4 +13,10 @@ struct Constants {
   
   static let tripCellIdentifier = "TripListTripCell"
   static let tripListHeaderCellIdentifier = "TripListHeaderCell"
+  
+  static let bookedMarkerIconName = "completed"
+  static let selectedMarkerIconName = "selected_point"
+  static let regularMarkerIconName = "point"
+  
+  static let bookedTripNotificationName = Notification.Name("TripBooked")
 }

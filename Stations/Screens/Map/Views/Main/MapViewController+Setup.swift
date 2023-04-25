@@ -19,14 +19,14 @@ extension MapViewController {
     NSLayoutConstraint.activate([listTripsButton.heightAnchor.constraint(equalToConstant: 48),
                                  listTripsButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
                                  listTripsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
-                                 listTripsButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16)])
+                                 listTripsButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -24)])
     
     NSLayoutConstraint.activate([mapView.topAnchor.constraint(equalTo: view.topAnchor),
                                  mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
                                  mapView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
                                  mapView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor)])
     
-    NotificationCenter.default.addObserver(self, selector: #selector(handleTripBooked), name: Notification.Name("TripBooked"), object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(handleTripBooked), name: Constants.bookedTripNotificationName, object: nil)
   }
   
   final func styleMap() {
@@ -47,16 +47,6 @@ extension MapViewController {
   @objc func listTripsTapped() {
     if let station = manager.viewModel.selectedStation {
       manager.router.showTrips(for: station)
-    }
-  }
-  
-  @objc func handleTripBooked() {
-    if let selectedMarker = mapView.selectedMarker {
-      DispatchQueue.main.async {
-        selectedMarker.icon = UIImage(named: "completed")
-        self.listTripsButton.isHidden = true
-        self.mapView.selectedMarker = nil
-      }
     }
   }
 }

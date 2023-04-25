@@ -8,7 +8,7 @@
 import UIKit
 
 class CustomAlertView {
-  static func showAlert(on superView: UIView, alert: Alert) {
+  static func showAlert(on superView: UIView, alert: AlertItem) {
     let alertView = UIView()
     alertView.translatesAutoresizingMaskIntoConstraints = false
     alertView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true

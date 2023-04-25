@@ -27,19 +27,22 @@ class MapNetworkManager: MapNetworkManagerProtocol {
       DispatchQueue.global(qos: .background).async {
         switch result {
         case .success(let response):
-          do {
-            let mappedData = try JSONDecoder().decode(Stations.self, from: response.data)
-            self.viewModel.stations = mappedData
-            self.viewModel.updateMarkers?()
-          } catch let error {
-            print(error)
-          }
+          self.handleResponse(response.data)
         case .failure(let error):
           print(error)
         }
       }
     }
-    
+  }
+  
+  private func handleResponse(_ data: Data) {
+    do {
+      let mappedData = try JSONDecoder().decode(Stations.self, from: data)
+      self.viewModel.stations = mappedData
+      self.viewModel.updateMarkers?()
+    } catch let error {
+      print(error)
+    }
   }
   
   private func getAPIMethod() -> StationsAPIMethod? {
