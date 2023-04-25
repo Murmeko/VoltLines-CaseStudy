@@ -33,6 +33,23 @@
 		BFB9375229F7091D00B4DDE1 /* BaseNetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9375129F7091D00B4DDE1 /* BaseNetworkManagerProtocol.swift */; };
 		BFB9375429F7185D00B4DDE1 /* MapMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9375329F7185D00B4DDE1 /* MapMainViewModel.swift */; };
 		BFB9375629F719A400B4DDE1 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9375529F719A400B4DDE1 /* MapManager.swift */; };
+		BFB9375829F7266100B4DDE1 /* TripListMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9375729F7266100B4DDE1 /* TripListMainViewModel.swift */; };
+		BFB9375B29F726A200B4DDE1 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9375A29F726A200B4DDE1 /* MapRouter.swift */; };
+		BFB9375D29F726DF00B4DDE1 /* BaseRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9375C29F726DF00B4DDE1 /* BaseRouterProtocol.swift */; };
+		BFB9375F29F7275000B4DDE1 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9375E29F7275000B4DDE1 /* BaseRouter.swift */; };
+		BFB9376129F72C8400B4DDE1 /* TripListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376029F72C8400B4DDE1 /* TripListRouter.swift */; };
+		BFB9376329F72C8D00B4DDE1 /* TripListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376229F72C8D00B4DDE1 /* TripListManager.swift */; };
+		BFB9376529F72CA000B4DDE1 /* TripListNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376429F72CA000B4DDE1 /* TripListNetworkManager.swift */; };
+		BFB9376729F72FD500B4DDE1 /* TripListViewController+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376629F72FD500B4DDE1 /* TripListViewController+Setup.swift */; };
+		BFB9376929F72FEA00B4DDE1 /* TripListViewController+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376829F72FEA00B4DDE1 /* TripListViewController+Methods.swift */; };
+		BFB9376C29F7325C00B4DDE1 /* TripListCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376B29F7325C00B4DDE1 /* TripListCellType.swift */; };
+		BFB9376E29F735B300B4DDE1 /* TripListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376D29F735B300B4DDE1 /* TripListDataSource.swift */; };
+		BFB9377029F7382A00B4DDE1 /* TripListViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376F29F7382A00B4DDE1 /* TripListViewController+TableViewDelegate.swift */; };
+		BFB9377229F738DF00B4DDE1 /* TripListBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9377129F738DF00B4DDE1 /* TripListBaseTableViewCell.swift */; };
+		BFB9377529F7390300B4DDE1 /* TripListTripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9377329F7390300B4DDE1 /* TripListTripCell.swift */; };
+		BFB9377629F7390300B4DDE1 /* TripListTripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB9377429F7390300B4DDE1 /* TripListTripCell.xib */; };
+		BFB9377829F73B7F00B4DDE1 /* TripListBaseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9377729F73B7F00B4DDE1 /* TripListBaseCellViewModel.swift */; };
+		BFB9377A29F73D2C00B4DDE1 /* TripListTripCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9377929F73D2C00B4DDE1 /* TripListTripCellViewModel.swift */; };
 		FEE813F5E25F6A5C71FF7CC7 /* Pods_Stations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE77CB671F4DD930264E710 /* Pods_Stations.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +107,23 @@
 		BFB9375129F7091D00B4DDE1 /* BaseNetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkManagerProtocol.swift; sourceTree = "<group>"; };
 		BFB9375329F7185D00B4DDE1 /* MapMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMainViewModel.swift; sourceTree = "<group>"; };
 		BFB9375529F719A400B4DDE1 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
+		BFB9375729F7266100B4DDE1 /* TripListMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListMainViewModel.swift; sourceTree = "<group>"; };
+		BFB9375A29F726A200B4DDE1 /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		BFB9375C29F726DF00B4DDE1 /* BaseRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouterProtocol.swift; sourceTree = "<group>"; };
+		BFB9375E29F7275000B4DDE1 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		BFB9376029F72C8400B4DDE1 /* TripListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListRouter.swift; sourceTree = "<group>"; };
+		BFB9376229F72C8D00B4DDE1 /* TripListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListManager.swift; sourceTree = "<group>"; };
+		BFB9376429F72CA000B4DDE1 /* TripListNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListNetworkManager.swift; sourceTree = "<group>"; };
+		BFB9376629F72FD500B4DDE1 /* TripListViewController+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TripListViewController+Setup.swift"; sourceTree = "<group>"; };
+		BFB9376829F72FEA00B4DDE1 /* TripListViewController+Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TripListViewController+Methods.swift"; sourceTree = "<group>"; };
+		BFB9376B29F7325C00B4DDE1 /* TripListCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListCellType.swift; sourceTree = "<group>"; };
+		BFB9376D29F735B300B4DDE1 /* TripListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListDataSource.swift; sourceTree = "<group>"; };
+		BFB9376F29F7382A00B4DDE1 /* TripListViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TripListViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		BFB9377129F738DF00B4DDE1 /* TripListBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListBaseTableViewCell.swift; sourceTree = "<group>"; };
+		BFB9377329F7390300B4DDE1 /* TripListTripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListTripCell.swift; sourceTree = "<group>"; };
+		BFB9377429F7390300B4DDE1 /* TripListTripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripListTripCell.xib; sourceTree = "<group>"; };
+		BFB9377729F73B7F00B4DDE1 /* TripListBaseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListBaseCellViewModel.swift; sourceTree = "<group>"; };
+		BFB9377929F73D2C00B4DDE1 /* TripListTripCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListTripCellViewModel.swift; sourceTree = "<group>"; };
 		E905922840762802173DCC41 /* Pods-Stations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stations.debug.xcconfig"; path = "Target Support Files/Pods-Stations/Pods-Stations.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,6 +255,7 @@
 		BF7EE3F229F6AB7900BA77E6 /* TripList */ = {
 			isa = PBXGroup;
 			children = (
+				BFB9376A29F7325200B4DDE1 /* Model */,
 				BF9E003629F6D0AF00C9A20D /* GeneralOps */,
 				BF9E003529F6D0A600C9A20D /* ViewModel */,
 				BF9E003429F6D09C00C9A20D /* Views */,
@@ -245,6 +280,7 @@
 			children = (
 				BF9E002029F6C93100C9A20D /* CustomAlertView.swift */,
 				BF9E002229F6C95F00C9A20D /* AlertType.swift */,
+				BFB9375E29F7275000B4DDE1 /* BaseRouter.swift */,
 			);
 			path = GeneralViews;
 			sourceTree = "<group>";
@@ -260,7 +296,7 @@
 		BF9E002B29F6CC9400C9A20D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				BFB9375329F7185D00B4DDE1 /* MapMainViewModel.swift */,
+				BFB9375929F7268D00B4DDE1 /* Main */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -270,6 +306,7 @@
 			children = (
 				BFB9374E29F708DE00B4DDE1 /* MapNetworkManager.swift */,
 				BFB9375529F719A400B4DDE1 /* MapManager.swift */,
+				BFB9375A29F726A200B4DDE1 /* MapRouter.swift */,
 			);
 			path = GeneralOps;
 			sourceTree = "<group>";
@@ -323,6 +360,9 @@
 		BF9E003629F6D0AF00C9A20D /* GeneralOps */ = {
 			isa = PBXGroup;
 			children = (
+				BFB9376229F72C8D00B4DDE1 /* TripListManager.swift */,
+				BFB9376029F72C8400B4DDE1 /* TripListRouter.swift */,
+				BFB9376429F72CA000B4DDE1 /* TripListNetworkManager.swift */,
 			);
 			path = GeneralOps;
 			sourceTree = "<group>";
@@ -330,6 +370,9 @@
 		BF9E003729F6D0BE00C9A20D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				BFB9377129F738DF00B4DDE1 /* TripListBaseTableViewCell.swift */,
+				BFB9377329F7390300B4DDE1 /* TripListTripCell.swift */,
+				BFB9377429F7390300B4DDE1 /* TripListTripCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -338,6 +381,10 @@
 			isa = PBXGroup;
 			children = (
 				BF9E003B29F6D14B00C9A20D /* TripListViewController.swift */,
+				BFB9376629F72FD500B4DDE1 /* TripListViewController+Setup.swift */,
+				BFB9376829F72FEA00B4DDE1 /* TripListViewController+Methods.swift */,
+				BFB9376F29F7382A00B4DDE1 /* TripListViewController+TableViewDelegate.swift */,
+				BFB9376D29F735B300B4DDE1 /* TripListDataSource.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -345,6 +392,8 @@
 		BF9E003929F6D0CF00C9A20D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				BFB9375729F7266100B4DDE1 /* TripListMainViewModel.swift */,
+				BFB9377729F73B7F00B4DDE1 /* TripListBaseCellViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -352,6 +401,7 @@
 		BF9E003A29F6D0D700C9A20D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				BFB9377929F73D2C00B4DDE1 /* TripListTripCellViewModel.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -368,8 +418,25 @@
 			isa = PBXGroup;
 			children = (
 				BFB9375129F7091D00B4DDE1 /* BaseNetworkManagerProtocol.swift */,
+				BFB9375C29F726DF00B4DDE1 /* BaseRouterProtocol.swift */,
 			);
 			path = GeneralProtocols;
+			sourceTree = "<group>";
+		};
+		BFB9375929F7268D00B4DDE1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BFB9375329F7185D00B4DDE1 /* MapMainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BFB9376A29F7325200B4DDE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFB9376B29F7325C00B4DDE1 /* TripListCellType.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF7EE3CB29F6990100BA77E6 /* LaunchScreen.storyboard in Resources */,
+				BFB9377629F7390300B4DDE1 /* TripListTripCell.xib in Resources */,
 				BF7EE3C829F6990100BA77E6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,24 +715,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF9E003229F6CDBA00C9A20D /* Trip.swift in Sources */,
+				BFB9375D29F726DF00B4DDE1 /* BaseRouterProtocol.swift in Sources */,
+				BFB9377529F7390300B4DDE1 /* TripListTripCell.swift in Sources */,
 				BFB9374F29F708DE00B4DDE1 /* MapNetworkManager.swift in Sources */,
+				BFB9376129F72C8400B4DDE1 /* TripListRouter.swift in Sources */,
+				BFB9375829F7266100B4DDE1 /* TripListMainViewModel.swift in Sources */,
+				BFB9375F29F7275000B4DDE1 /* BaseRouter.swift in Sources */,
 				BFB9375629F719A400B4DDE1 /* MapManager.swift in Sources */,
+				BFB9377829F73B7F00B4DDE1 /* TripListBaseCellViewModel.swift in Sources */,
+				BFB9377029F7382A00B4DDE1 /* TripListViewController+TableViewDelegate.swift in Sources */,
+				BFB9376729F72FD500B4DDE1 /* TripListViewController+Setup.swift in Sources */,
+				BFB9376929F72FEA00B4DDE1 /* TripListViewController+Methods.swift in Sources */,
+				BFB9376E29F735B300B4DDE1 /* TripListDataSource.swift in Sources */,
 				BF9E002129F6C93100C9A20D /* CustomAlertView.swift in Sources */,
 				BF7EE3C329F6990000BA77E6 /* MapViewController.swift in Sources */,
+				BFB9377A29F73D2C00B4DDE1 /* TripListTripCellViewModel.swift in Sources */,
 				BFB9375429F7185D00B4DDE1 /* MapMainViewModel.swift in Sources */,
 				BF9E002329F6C95F00C9A20D /* AlertType.swift in Sources */,
+				BFB9376329F72C8D00B4DDE1 /* TripListManager.swift in Sources */,
 				BF9E002929F6CAD000C9A20D /* TypeAliases.swift in Sources */,
 				BF9E002529F6CA6900C9A20D /* MapViewController+Setup.swift in Sources */,
 				BF7EE3BF29F6990000BA77E6 /* AppDelegate.swift in Sources */,
+				BFB9377229F738DF00B4DDE1 /* TripListBaseTableViewCell.swift in Sources */,
 				BF9E003F29F6D1A700C9A20D /* Constants.swift in Sources */,
+				BFB9375B29F726A200B4DDE1 /* MapRouter.swift in Sources */,
 				BF9E003029F6CD8D00C9A20D /* Station.swift in Sources */,
 				BFB9374B29F707BE00B4DDE1 /* StationsAPI.swift in Sources */,
+				BFB9376529F72CA000B4DDE1 /* TripListNetworkManager.swift in Sources */,
 				BF7EE3C129F6990000BA77E6 /* SceneDelegate.swift in Sources */,
 				BFB9374D29F707D100B4DDE1 /* StationsAPIProvider.swift in Sources */,
 				BF9E003C29F6D14B00C9A20D /* TripListViewController.swift in Sources */,
 				BF9E002729F6CA7400C9A20D /* MapViewController+Methods.swift in Sources */,
 				BF7EE3EF29F6AA0D00BA77E6 /* ViewControllerMaker.swift in Sources */,
 				BFB9375229F7091D00B4DDE1 /* BaseNetworkManagerProtocol.swift in Sources */,
+				BFB9376C29F7325C00B4DDE1 /* TripListCellType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

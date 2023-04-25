@@ -8,9 +8,9 @@
 import Foundation
 
 protocol MapMainViewModeProtocol {
-  
+  var showAlertView: VoidHandler? { get set }
 }
 
 class MapMainViewModel: MapMainViewModeProtocol {
-  
+  var showAlertView: VoidHandler?
 }

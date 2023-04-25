@@ -10,4 +10,7 @@ import Foundation
 struct Constants {
   static let baseURL = "https://demo.voltlines.com/"
   static let gmAPIKey = "AIzaSyCkAxCC3gasmwpNwOejbGRZcDPB67ONVr4"
+  
+  static let tripCellIdentifier = "TripListTripCell"
+  static let tripListHeaderCellIdentifier = "TripListHeaderCell"
 }
