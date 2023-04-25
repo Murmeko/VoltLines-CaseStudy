@@ -9,12 +9,12 @@ import Foundation
 
 enum TripListCellType: CaseIterable {
   case tripCell
- // case headerCell
+  case headerCell
 
   var identifier: String {
     switch self {
     case .tripCell: return Constants.tripCellIdentifier
-   // case .headerCell: return Constants.tripListHeaderCellIdentifier
+    case .headerCell: return Constants.tripListHeaderCellIdentifier
     }
   }
 }

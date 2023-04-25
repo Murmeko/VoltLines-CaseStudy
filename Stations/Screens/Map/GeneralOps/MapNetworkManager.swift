@@ -10,7 +10,7 @@ import Foundation
 protocol MapNetworkManagerProtocol: BaseNetworkManagerProtocol {}
 
 class MapNetworkManager: MapNetworkManagerProtocol {
-  let viewModel: MapMainViewModeProtocol
+  var viewModel: MapMainViewModeProtocol
   
   init(viewModel: MapMainViewModeProtocol) {
     self.viewModel = viewModel
@@ -27,7 +27,8 @@ class MapNetworkManager: MapNetworkManagerProtocol {
         case .success(let response):
           do {
             let mappedData = try JSONDecoder().decode(Stations.self, from: response.data)
-            print(mappedData)
+            self.viewModel.stations = mappedData
+            self.viewModel.updateMarkers?()
           } catch let error {
             print(error)
           }

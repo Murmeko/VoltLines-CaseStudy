@@ -8,5 +8,10 @@
 import UIKit
 
 class TripListBaseTableViewCell: UITableViewCell {
+  var router: TripListRouterProtocol!
   var viewModel: TripListBaseCellViewModelProtocol!
+  
+  override class func awakeFromNib() {
+    super.awakeFromNib()
+  }
 }

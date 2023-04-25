@@ -23,18 +23,18 @@
                             <constraint firstAttribute="height" constant="20" id="aeC-yE-vE4"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:01 AM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyu-3R-GTD">
                         <rect key="frame" x="171" y="21.666666666666668" width="57" height="17.000000000000004"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeV-Pn-KXd">
                         <rect key="frame" x="240" y="14" width="64" height="32"/>
-                        <color key="backgroundColor" red="0.0" green="0.22327618547418968" blue="0.61290922619047616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.086274509803921567" green="0.14117647058823529" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="32" id="c5m-T8-X7h"/>
                             <constraint firstAttribute="width" constant="64" id="y3E-mg-epz"/>
@@ -48,14 +48,25 @@
                             <action selector="bookingTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fbh-cC-LmL"/>
                         </connections>
                     </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hA-SX-rDN">
+                        <rect key="frame" x="15" y="59" width="305" height="1"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="YeM-Vv-ud4"/>
+                        </constraints>
+                    </view>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="cgV-Dd-cRa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="7FD-1f-w6i"/>
                     <constraint firstItem="eeV-Pn-KXd" firstAttribute="leading" secondItem="oyu-3R-GTD" secondAttribute="trailing" constant="12" id="8K1-Tb-m8F"/>
+                    <constraint firstAttribute="trailing" secondItem="1hA-SX-rDN" secondAttribute="trailing" id="LEa-F0-bhI"/>
                     <constraint firstItem="cgV-Dd-cRa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Nc1-Ho-72n"/>
                     <constraint firstAttribute="trailing" secondItem="eeV-Pn-KXd" secondAttribute="trailing" constant="16" id="Pna-PC-Q5L"/>
                     <constraint firstItem="eeV-Pn-KXd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Qcd-7w-kVH"/>
+                    <constraint firstItem="1hA-SX-rDN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="R4h-MP-enk"/>
                     <constraint firstItem="oyu-3R-GTD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bHV-gt-ihY"/>
+                    <constraint firstAttribute="bottom" secondItem="1hA-SX-rDN" secondAttribute="bottom" id="efw-Oe-7My"/>
                     <constraint firstAttribute="bottom" secondItem="cgV-Dd-cRa" secondAttribute="bottom" constant="20" id="z9i-sm-vXm"/>
                 </constraints>
             </tableViewCellContentView>

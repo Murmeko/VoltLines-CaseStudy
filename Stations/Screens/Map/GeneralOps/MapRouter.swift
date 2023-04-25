@@ -7,12 +7,12 @@
 import Foundation
 
 protocol MapRouterProtocol: BaseRouterProtocol {
-  func showTrips(with tripList: [Trip])
+  func showTrips(for station: Station)
 }
 
 class MapRouter: BaseRouter, MapRouterProtocol {
-  func showTrips(with tripList: [Trip]) {
-    let movieDetailVC = ViewControllerMaker.tripListViewController(trips: tripList)
+  func showTrips(for station: Station) {
+    let movieDetailVC = ViewControllerMaker.tripListViewController(for: station)
     movieDetailVC.modalPresentationStyle = .fullScreen
     presentViewController?(movieDetailVC)
   }

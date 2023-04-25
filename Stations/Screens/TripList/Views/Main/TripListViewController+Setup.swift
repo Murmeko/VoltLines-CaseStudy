@@ -12,7 +12,7 @@ extension TripListViewController {
     self.tableView = UITableView(frame: .zero, style: .plain)
     self.tableView.delegate = self
     self.tableView.dataSource = manager.dataSource
-    self.tableView.separatorStyle = .singleLine
+    self.tableView.separatorStyle = .none
     
     self.tableView.allowsMultipleSelection = false
     self.tableView.backgroundColor = .white

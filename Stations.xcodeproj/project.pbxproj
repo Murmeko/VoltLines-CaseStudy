@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3DB3B719DD46F28704293B2D /* Pods_StationsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2F9EA6CFEB048544293107 /* Pods_StationsTests.framework */; };
 		4876F5C31B25F06B0F898EE8 /* Pods_Stations_StationsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E14DD12C556A7AD0AFC3D1E /* Pods_Stations_StationsUITests.framework */; };
+		BF05A13929F809A500C681E6 /* StationMarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05A13829F809A500C681E6 /* StationMarkerInfoView.swift */; };
+		BF05A14129F820BD00C681E6 /* MapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = BF05A14029F820BD00C681E6 /* MapStyle.json */; };
+		BF05A14429F82F7200C681E6 /* TripListHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05A14229F82F7200C681E6 /* TripListHeaderCell.swift */; };
+		BF05A14529F82F7200C681E6 /* TripListHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF05A14329F82F7200C681E6 /* TripListHeaderCell.xib */; };
 		BF7EE3BF29F6990000BA77E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EE3BE29F6990000BA77E6 /* AppDelegate.swift */; };
 		BF7EE3C129F6990000BA77E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EE3C029F6990000BA77E6 /* SceneDelegate.swift */; };
 		BF7EE3C329F6990000BA77E6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EE3C229F6990000BA77E6 /* MapViewController.swift */; };
@@ -78,6 +82,10 @@
 		6986A80314C6249877C13B25 /* Pods-Stations-StationsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stations-StationsUITests.release.xcconfig"; path = "Target Support Files/Pods-Stations-StationsUITests/Pods-Stations-StationsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9E14DD12C556A7AD0AFC3D1E /* Pods_Stations_StationsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stations_StationsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2F9EA6CFEB048544293107 /* Pods_StationsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StationsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF05A13829F809A500C681E6 /* StationMarkerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMarkerInfoView.swift; sourceTree = "<group>"; };
+		BF05A14029F820BD00C681E6 /* MapStyle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MapStyle.json; sourceTree = "<group>"; };
+		BF05A14229F82F7200C681E6 /* TripListHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListHeaderCell.swift; sourceTree = "<group>"; };
+		BF05A14329F82F7200C681E6 /* TripListHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripListHeaderCell.xib; sourceTree = "<group>"; };
 		BF574B15ED5D38ADC008CCD1 /* Pods-StationsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StationsTests.debug.xcconfig"; path = "Target Support Files/Pods-StationsTests/Pods-StationsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF7EE3BB29F6990000BA77E6 /* Stations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7EE3BE29F6990000BA77E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +186,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BF05A13529F8094100C681E6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BF05A13829F809A500C681E6 /* StationMarkerInfoView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		BF7EE3B229F6990000BA77E6 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +226,7 @@
 				BF7EE3C729F6990100BA77E6 /* Assets.xcassets */,
 				BF7EE3C929F6990100BA77E6 /* LaunchScreen.storyboard */,
 				BF7EE3CC29F6990100BA77E6 /* Info.plist */,
+				BF05A14029F820BD00C681E6 /* MapStyle.json */,
 			);
 			path = Stations;
 			sourceTree = "<group>";
@@ -289,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				BF9E003329F6CDDE00C9A20D /* Main */,
+				BF05A13529F8094100C681E6 /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -373,6 +391,8 @@
 				BFB9377129F738DF00B4DDE1 /* TripListBaseTableViewCell.swift */,
 				BFB9377329F7390300B4DDE1 /* TripListTripCell.swift */,
 				BFB9377429F7390300B4DDE1 /* TripListTripCell.xib */,
+				BF05A14229F82F7200C681E6 /* TripListHeaderCell.swift */,
+				BF05A14329F82F7200C681E6 /* TripListHeaderCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -553,6 +573,8 @@
 				BF7EE3CB29F6990100BA77E6 /* LaunchScreen.storyboard in Resources */,
 				BFB9377629F7390300B4DDE1 /* TripListTripCell.xib in Resources */,
 				BF7EE3C829F6990100BA77E6 /* Assets.xcassets in Resources */,
+				BF05A14529F82F7200C681E6 /* TripListHeaderCell.xib in Resources */,
+				BF05A14129F820BD00C681E6 /* MapStyle.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,10 +757,12 @@
 				BFB9376329F72C8D00B4DDE1 /* TripListManager.swift in Sources */,
 				BF9E002929F6CAD000C9A20D /* TypeAliases.swift in Sources */,
 				BF9E002529F6CA6900C9A20D /* MapViewController+Setup.swift in Sources */,
+				BF05A14429F82F7200C681E6 /* TripListHeaderCell.swift in Sources */,
 				BF7EE3BF29F6990000BA77E6 /* AppDelegate.swift in Sources */,
 				BFB9377229F738DF00B4DDE1 /* TripListBaseTableViewCell.swift in Sources */,
 				BF9E003F29F6D1A700C9A20D /* Constants.swift in Sources */,
 				BFB9375B29F726A200B4DDE1 /* MapRouter.swift in Sources */,
+				BF05A13929F809A500C681E6 /* StationMarkerInfoView.swift in Sources */,
 				BF9E003029F6CD8D00C9A20D /* Station.swift in Sources */,
 				BFB9374B29F707BE00B4DDE1 /* StationsAPI.swift in Sources */,
 				BFB9376529F72CA000B4DDE1 /* TripListNetworkManager.swift in Sources */,
@@ -921,10 +945,11 @@
 				DEVELOPMENT_TEAM = NVAL38CUS8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stations/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Accessing your location helps us find stations near you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -950,10 +975,11 @@
 				DEVELOPMENT_TEAM = NVAL38CUS8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stations/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Accessing your location helps us find stations near you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

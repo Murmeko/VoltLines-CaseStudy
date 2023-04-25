@@ -9,9 +9,11 @@ import UIKit
 
 class TripListDataSource: NSObject, UITableViewDataSource {
   let viewModel: TripListMainViewModelProtocol
+  let router: TripListRouterProtocol
   
-  init(viewModel: TripListMainViewModelProtocol) {
+  init(viewModel: TripListMainViewModelProtocol, router: TripListRouterProtocol) {
     self.viewModel = viewModel
+    self.router = router
   }
   
   func numberOfSections(in tableView: UITableView) -> Int {
@@ -25,6 +27,12 @@ class TripListDataSource: NSObject, UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: "TripListTripCell", for: indexPath) as? TripListTripCell else { fatalError() }
-    return cell
+    guard let headerCell = tableView.dequeueReusableCell(withIdentifier: "TripListHeaderCell", for: indexPath) as? TripListHeaderCell else { fatalError() }
+    if indexPath.row == 0 {
+      headerCell.router = router
+      return headerCell
+    } else {
+      return cell
+    }
   }
 }

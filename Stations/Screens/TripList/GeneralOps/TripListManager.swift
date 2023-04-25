@@ -12,13 +12,14 @@ protocol TripListManagerProtocol {
   var router: TripListRouterProtocol { get set }
   var networkManager: TripListNetworkManagerProtocol { get set }
   var dataSource: TripListDataSource { get set }
+  var station: Station { get set }
 }
 
 class TripListManager: TripListManagerProtocol {
-  var trips: [Trip]
+  var station: Station
   
-  init(trips: [Trip]) {
-    self.trips = trips
+  init(station: Station) {
+    self.station = station
   }
   
   lazy var viewModel: TripListMainViewModelProtocol = {
@@ -34,6 +35,6 @@ class TripListManager: TripListManagerProtocol {
   }()
   
   lazy var dataSource: TripListDataSource = {
-    return TripListDataSource(viewModel: viewModel)
+    return TripListDataSource(viewModel: viewModel, router: router)
   }()
 }

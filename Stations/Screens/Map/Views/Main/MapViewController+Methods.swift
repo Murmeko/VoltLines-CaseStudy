@@ -8,6 +8,13 @@
 import UIKit
 
 extension MapViewController {
+  final func updateMarkers() -> VoidHandler? {
+    return { [weak self] in
+      guard let self = self else { return }
+      createMarkers(from: manager.viewModel.stations)
+    }
+  }
+  
   final func showAlertView() -> VoidHandler? {
     return { [weak self] in
       guard let self = self else { return }

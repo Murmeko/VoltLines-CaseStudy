@@ -15,8 +15,8 @@ extension ViewControllerMaker {
     return MapViewController(manager: manager)
   }
   
-  static func tripListViewController(trips: [Trip]) -> TripListViewController {
-    let manager = TripListManager(trips: trips)
+  static func tripListViewController(for station: Station) -> TripListViewController {
+    let manager = TripListManager(station: station)
     return TripListViewController(manager: manager)
   }
 }
