@@ -9,10 +9,33 @@ import Foundation
 
 protocol TripListMainViewModelProtocol {
   var updateUI: VoidHandler? { get set }
-  var showAlertView: VoidHandler? { get set }
+  var showAlertView: ((_ alert: Alert) -> Void)? { get set }
+  
+  var station: Station { get set }
+  var parser: TripListParserProtocol { get }
+  var cellViewModels: [TripListBaseCellViewModelProtocol] { get set }
 }
 
 class TripListMainViewModel: TripListMainViewModelProtocol {
   var updateUI: VoidHandler?
-  var showAlertView: VoidHandler?
+  var showAlertView: ((_ alert: Alert) -> Void)?
+  
+  var station: Station
+  let parser: TripListParserProtocol
+  var cellViewModels: [TripListBaseCellViewModelProtocol] = []
+  
+  init(station: Station, parser: TripListParserProtocol) {
+    self.station = station
+    self.parser = parser
+    self.parseDataSource()
+  }
+  
+  private func parseDataSource() {
+    do {
+      self.cellViewModels = try parser.parseDataSource(from: station)
+      self.updateUI?()
+    } catch {
+      print("Error while parsing trips")
+    }
+  }
 }

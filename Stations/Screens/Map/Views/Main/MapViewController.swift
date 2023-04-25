@@ -28,8 +28,8 @@ class MapViewController: UIViewController {
     button.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
     button.layer.cornerRadius = 24
     button.addTarget(self, action: #selector(listTripsTapped), for: .touchUpInside)
-    button.isHidden = true
     button.translatesAutoresizingMaskIntoConstraints = false
+    button.isHidden = true
     return button
   }()
   
@@ -54,7 +54,7 @@ class MapViewController: UIViewController {
     styleMap()
     setupMapView()
     setupBindings()
-    manager.networkManager.requestPage()
+    manager.networkManager.requestStations()
   }
   
   func createMarkers(from stations: Stations){
@@ -65,7 +65,7 @@ class MapViewController: UIViewController {
       else { return }
       
       let marker = GMSMarker()
-      marker.icon = UIImage(named: "point")
+      marker.icon = UIImage(named: station.isBooked ? "completed" : "point")
       marker.position = CLLocationCoordinate2D(latitude: latitude,
                                                longitude: longtitude)
       marker.title = "\(station.tripsCount) Trips"

@@ -14,11 +14,18 @@ class TripListTripCell: TripListBaseTableViewCell {
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    // Initialization code
+  }
+  
+  override func configureCell() {
+    guard let viewModel = viewModel as? TripListTripCellViewModelProtocol else { return }
+    busLabel.text = viewModel.busName
+    busArrival.text = viewModel.busArrival
     bookingButton.layer.cornerRadius = 16
   }
   
   @IBAction func bookingTapped(_ sender: UIButton) {
+    guard let networkManager = networkManager,
+          let viewModel = viewModel as? TripListTripCellViewModelProtocol else { return }
+    networkManager.requestBooking(for: viewModel.tripID)
   }
-  
 }

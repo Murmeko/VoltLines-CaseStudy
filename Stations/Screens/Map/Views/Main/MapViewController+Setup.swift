@@ -25,6 +25,8 @@ extension MapViewController {
                                  mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
                                  mapView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
                                  mapView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor)])
+    
+    NotificationCenter.default.addObserver(self, selector: #selector(handleTripBooked), name: Notification.Name("TripBooked"), object: nil)
   }
   
   final func styleMap() {
@@ -39,14 +41,22 @@ extension MapViewController {
   
   final func setupBindings() {
     manager.router.presentViewController = presentViewController()
-    
-    manager.viewModel.showAlertView = showAlertView()
     manager.viewModel.updateMarkers = updateMarkers()
   }
   
   @objc func listTripsTapped() {
     if let station = manager.viewModel.selectedStation {
       manager.router.showTrips(for: station)
+    }
+  }
+  
+  @objc func handleTripBooked() {
+    if let selectedMarker = mapView.selectedMarker {
+      DispatchQueue.main.async {
+        selectedMarker.icon = UIImage(named: "completed")
+        self.listTripsButton.isHidden = true
+        self.mapView.selectedMarker = nil
+      }
     }
   }
 }

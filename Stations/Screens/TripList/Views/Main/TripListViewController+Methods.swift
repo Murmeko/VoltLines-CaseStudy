@@ -17,10 +17,12 @@ extension TripListViewController {
     }
   }
   
-  final func showAlertView() -> VoidHandler? {
-    return { [weak self] in
+  final func showAlertView() -> (_ alert: Alert) -> Void {
+    return { [weak self] alert in
       guard let self = self else { return }
-      CustomAlertView.showAlert(on: view, message: "", type: .failure)
+      DispatchQueue.main.async {
+        CustomAlertView.showAlert(on: self.view, alert: alert)
+      }
     }
   }
   

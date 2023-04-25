@@ -10,10 +10,12 @@ import UIKit
 class TripListDataSource: NSObject, UITableViewDataSource {
   let viewModel: TripListMainViewModelProtocol
   let router: TripListRouterProtocol
+  let networkManager: TripListNetworkManagerProtocol
   
-  init(viewModel: TripListMainViewModelProtocol, router: TripListRouterProtocol) {
+  init(viewModel: TripListMainViewModelProtocol, router: TripListRouterProtocol, networkManager: TripListNetworkManagerProtocol) {
     self.viewModel = viewModel
     self.router = router
+    self.networkManager = networkManager
   }
   
   func numberOfSections(in tableView: UITableView) -> Int {
@@ -21,18 +23,17 @@ class TripListDataSource: NSObject, UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 10
+    return viewModel.cellViewModels.count
   }
   
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: "TripListTripCell", for: indexPath) as? TripListTripCell else { fatalError() }
-    guard let headerCell = tableView.dequeueReusableCell(withIdentifier: "TripListHeaderCell", for: indexPath) as? TripListHeaderCell else { fatalError() }
-    if indexPath.row == 0 {
-      headerCell.router = router
-      return headerCell
-    } else {
-      return cell
-    }
+    let cellViewModel = viewModel.cellViewModels[indexPath.row]
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: cellViewModel.cellType.identifier, for: indexPath) as? TripListBaseTableViewCell else { fatalError("Error while dequeing detail cell") }
+    cell.viewModel = cellViewModel
+    cell.router = router
+    cell.networkManager = networkManager
+    cell.configureCell()
+    return cell
   }
 }

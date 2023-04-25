@@ -10,6 +10,7 @@ import Foundation
 protocol TripListManagerProtocol {
   var viewModel: TripListMainViewModelProtocol { get set }
   var router: TripListRouterProtocol { get set }
+  var parser: TripListParserProtocol { get set }
   var networkManager: TripListNetworkManagerProtocol { get set }
   var dataSource: TripListDataSource { get set }
   var station: Station { get set }
@@ -23,7 +24,11 @@ class TripListManager: TripListManagerProtocol {
   }
   
   lazy var viewModel: TripListMainViewModelProtocol = {
-    return TripListMainViewModel()
+    return TripListMainViewModel(station: station, parser: parser)
+  }()
+  
+  lazy var parser: TripListParserProtocol = {
+    return TripListParser()
   }()
   
   lazy var router: TripListRouterProtocol = {
@@ -31,10 +36,10 @@ class TripListManager: TripListManagerProtocol {
   }()
   
   lazy var networkManager: TripListNetworkManagerProtocol = {
-    return TripListNetworkManager()
+    return TripListNetworkManager(viewModel: viewModel, router: router)
   }()
   
   lazy var dataSource: TripListDataSource = {
-    return TripListDataSource(viewModel: viewModel, router: router)
+    return TripListDataSource(viewModel: viewModel, router: router, networkManager: networkManager)
   }()
 }

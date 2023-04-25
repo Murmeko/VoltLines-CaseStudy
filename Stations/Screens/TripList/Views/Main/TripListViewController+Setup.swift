@@ -33,6 +33,8 @@ extension TripListViewController {
   
   final func setupBindings() {
     manager.router.dismiss = dismiss()
+    
     manager.viewModel.updateUI = updateUI()
+    manager.viewModel.showAlertView = showAlertView()
   }
 }

@@ -7,7 +7,9 @@
 
 import Foundation
 
-protocol MapNetworkManagerProtocol: BaseNetworkManagerProtocol {}
+protocol MapNetworkManagerProtocol: BaseNetworkManagerProtocol {
+  func requestStations()
+}
 
 class MapNetworkManager: MapNetworkManagerProtocol {
   var viewModel: MapMainViewModeProtocol
@@ -16,13 +18,13 @@ class MapNetworkManager: MapNetworkManagerProtocol {
     self.viewModel = viewModel
   }
   
-  func requestPage() {
+  func requestStations() {
     guard let apiMethod = getAPIMethod() else { return }
     let target = StationsAPI(apiMethod: apiMethod)
     
     StationsAPIProvider.apiProvider.request(target) { [weak self] result in
       guard let self = self else { return }
-      DispatchQueue.global(qos: .userInitiated).async {
+      DispatchQueue.global(qos: .background).async {
         switch result {
         case .success(let response):
           do {
@@ -38,14 +40,6 @@ class MapNetworkManager: MapNetworkManagerProtocol {
       }
     }
     
-  }
-  
-  private func handleResponse(_ responseModel: Stations) {
-    do {
-      
-    } catch let error {
-      print(error)
-    }
   }
   
   private func getAPIMethod() -> StationsAPIMethod? {

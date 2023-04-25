@@ -7,6 +7,4 @@
 
 import Foundation
 
-protocol BaseNetworkManagerProtocol {
-  func requestPage()
-}
+protocol BaseNetworkManagerProtocol {}

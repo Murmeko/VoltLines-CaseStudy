@@ -22,6 +22,8 @@
 		BF7EE3E029F6990100BA77E6 /* StationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EE3DF29F6990100BA77E6 /* StationsUITests.swift */; };
 		BF7EE3E229F6990100BA77E6 /* StationsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EE3E129F6990100BA77E6 /* StationsUITestsLaunchTests.swift */; };
 		BF7EE3EF29F6AA0D00BA77E6 /* ViewControllerMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EE3EE29F6AA0D00BA77E6 /* ViewControllerMaker.swift */; };
+		BF8E997829F8464800D743B0 /* TripListHeaderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E997729F8464800D743B0 /* TripListHeaderCellViewModel.swift */; };
+		BF8E997A29F84F5800D743B0 /* TripListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E997929F84F5800D743B0 /* TripListParser.swift */; };
 		BF9E002129F6C93100C9A20D /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E002029F6C93100C9A20D /* CustomAlertView.swift */; };
 		BF9E002329F6C95F00C9A20D /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E002229F6C95F00C9A20D /* AlertType.swift */; };
 		BF9E002529F6CA6900C9A20D /* MapViewController+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E002429F6CA6900C9A20D /* MapViewController+Setup.swift */; };
@@ -100,6 +102,8 @@
 		BF7EE3DF29F6990100BA77E6 /* StationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsUITests.swift; sourceTree = "<group>"; };
 		BF7EE3E129F6990100BA77E6 /* StationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BF7EE3EE29F6AA0D00BA77E6 /* ViewControllerMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMaker.swift; sourceTree = "<group>"; };
+		BF8E997729F8464800D743B0 /* TripListHeaderCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListHeaderCellViewModel.swift; sourceTree = "<group>"; };
+		BF8E997929F84F5800D743B0 /* TripListParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListParser.swift; sourceTree = "<group>"; };
 		BF9E002029F6C93100C9A20D /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		BF9E002229F6C95F00C9A20D /* AlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
 		BF9E002429F6CA6900C9A20D /* MapViewController+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+Setup.swift"; sourceTree = "<group>"; };
@@ -381,6 +385,7 @@
 				BFB9376229F72C8D00B4DDE1 /* TripListManager.swift */,
 				BFB9376029F72C8400B4DDE1 /* TripListRouter.swift */,
 				BFB9376429F72CA000B4DDE1 /* TripListNetworkManager.swift */,
+				BF8E997929F84F5800D743B0 /* TripListParser.swift */,
 			);
 			path = GeneralOps;
 			sourceTree = "<group>";
@@ -422,6 +427,7 @@
 			isa = PBXGroup;
 			children = (
 				BFB9377929F73D2C00B4DDE1 /* TripListTripCellViewModel.swift */,
+				BF8E997729F8464800D743B0 /* TripListHeaderCellViewModel.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -767,11 +773,13 @@
 				BFB9374B29F707BE00B4DDE1 /* StationsAPI.swift in Sources */,
 				BFB9376529F72CA000B4DDE1 /* TripListNetworkManager.swift in Sources */,
 				BF7EE3C129F6990000BA77E6 /* SceneDelegate.swift in Sources */,
+				BF8E997A29F84F5800D743B0 /* TripListParser.swift in Sources */,
 				BFB9374D29F707D100B4DDE1 /* StationsAPIProvider.swift in Sources */,
 				BF9E003C29F6D14B00C9A20D /* TripListViewController.swift in Sources */,
 				BF9E002729F6CA7400C9A20D /* MapViewController+Methods.swift in Sources */,
 				BF7EE3EF29F6AA0D00BA77E6 /* ViewControllerMaker.swift in Sources */,
 				BFB9375229F7091D00B4DDE1 /* BaseNetworkManagerProtocol.swift in Sources */,
+				BF8E997829F8464800D743B0 /* TripListHeaderCellViewModel.swift in Sources */,
 				BFB9376C29F7325C00B4DDE1 /* TripListCellType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
