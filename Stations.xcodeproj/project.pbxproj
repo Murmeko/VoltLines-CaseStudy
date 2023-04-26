@@ -213,6 +213,15 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		BF167F4A29F8A0A2002E6FB9 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				BF9E002229F6C95F00C9A20D /* AlertItem.swift */,
+				BF9E002029F6C93100C9A20D /* CustomAlertView.swift */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
 		BF7EE3B229F6990000BA77E6 = {
 			isa = PBXGroup;
 			children = (
@@ -280,7 +289,6 @@
 				BF9E003D29F6D19B00C9A20D /* Helpers */,
 				BF9E001F29F6C91D00C9A20D /* GeneralViews */,
 				BF7EE3EE29F6AA0D00BA77E6 /* ViewControllerMaker.swift */,
-				BF9E002829F6CAD000C9A20D /* TypeAliases.swift */,
 			);
 			path = GeneralUsage;
 			sourceTree = "<group>";
@@ -311,8 +319,7 @@
 		BF9E001F29F6C91D00C9A20D /* GeneralViews */ = {
 			isa = PBXGroup;
 			children = (
-				BF9E002229F6C95F00C9A20D /* AlertItem.swift */,
-				BF9E002029F6C93100C9A20D /* CustomAlertView.swift */,
+				BF167F4A29F8A0A2002E6FB9 /* AlertView */,
 				BFB9375E29F7275000B4DDE1 /* BaseRouter.swift */,
 			);
 			path = GeneralViews;
@@ -448,6 +455,7 @@
 		BF9E003D29F6D19B00C9A20D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				BF9E002829F6CAD000C9A20D /* TypeAliases.swift */,
 				BF9E003E29F6D1A700C9A20D /* Constants.swift */,
 			);
 			path = Helpers;

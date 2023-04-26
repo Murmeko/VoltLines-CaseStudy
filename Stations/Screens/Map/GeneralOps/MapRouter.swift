@@ -12,8 +12,8 @@ protocol MapRouterProtocol: BaseRouterProtocol {
 
 class MapRouter: BaseRouter, MapRouterProtocol {
   func showTrips(for station: Station) {
-    let movieDetailVC = ViewControllerMaker.tripListViewController(for: station)
-    movieDetailVC.modalPresentationStyle = .fullScreen
-    presentViewController?(movieDetailVC)
+    let tripListVC = ViewControllerMaker.tripListViewController(for: station)
+    tripListVC.modalPresentationStyle = .fullScreen
+    presentViewController?(tripListVC)
   }
 }

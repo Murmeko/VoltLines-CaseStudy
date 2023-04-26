@@ -10,8 +10,6 @@ import CoreLocation
 import GoogleMaps
 
 class MapViewController: UIViewController {
-  var manager: MapManagerProtocol
-  
   lazy var locationManager: CLLocationManager = {
     let manager = CLLocationManager()
     manager.desiredAccuracy = kCLLocationAccuracyBest
@@ -38,6 +36,8 @@ class MapViewController: UIViewController {
     map.mapType = .normal
     return map
   }()
+  
+  var manager: MapManagerProtocol
   
   init(manager: MapManagerProtocol) {
     self.manager = manager

@@ -45,12 +45,12 @@ extension MapViewController {
       else { return }
       
       let marker = GMSMarker()
-      marker.icon = UIImage(named: Constants.regularMarkerIconName)
-      marker.position = CLLocationCoordinate2D(latitude: latitude,
-                                               longitude: longtitude)
-      marker.title = "\(station.tripsCount) Trips"
-      marker.userData = station
       marker.tracksViewChanges = false
+      marker.icon = UIImage(named: Constants.regularMarkerIconName)
+      marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longtitude)
+      marker.userData = station
+      marker.title = String(station.tripsCount) + " Trips"
+      
       marker.map = mapView
     }
   }

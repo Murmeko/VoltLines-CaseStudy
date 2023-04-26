@@ -31,10 +31,10 @@ class TripListNetworkManager: TripListNetworkManagerProtocol {
         case .success(let response):
           self.handleResponse(response.data)
         case .failure:
-          let alert = AlertItem(title: "Network error",
+          let alertItem = AlertItem(title: "Network error",
                             message: "Please try again.",
                             buttonTitle: "Go Back")
-          self.viewModel.showAlertView?(alert)
+          self.viewModel.showAlertView?(alertItem)
         }
       }
     }
@@ -45,10 +45,10 @@ class TripListNetworkManager: TripListNetworkManagerProtocol {
       self.router.dismiss?()
       NotificationCenter.default.post(name: Constants.bookedTripNotificationName, object: nil)
     } else {
-      let alert = AlertItem(title: "The trip you selected is full.",
+      let alertItem = AlertItem(title: "The trip you selected is full.",
                         message: "Please select another trip.",
                         buttonTitle: "Select a Trip")
-      self.viewModel.showAlertView?(alert)
+      self.viewModel.showAlertView?(alertItem)
     }
   }
   

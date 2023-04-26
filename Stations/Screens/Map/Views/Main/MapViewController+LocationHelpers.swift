@@ -32,7 +32,7 @@ extension MapViewController {
     case .authorizedWhenInUse, .authorizedAlways:
       locationManager.startUpdatingLocation()
     default:
-      print("show an error view here")
+      print("could show an error view here")
     }
   }
 }
