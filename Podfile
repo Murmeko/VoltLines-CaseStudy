@@ -1,20 +1,7 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '13.0'
+platform :ios, '14.0'
 
-target 'Stations' do
-  # Comment the next line if you don't want to use dynamic frameworks
+target 'VoltLines-CaseStudy' do
   use_frameworks!
-
-  pod 'Moya', '~> 15.0'
+  pod 'Moya'
   pod 'GoogleMaps'
-
-  target 'StationsTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'StationsUITests' do
-    # Pods for testing
-  end
-
 end

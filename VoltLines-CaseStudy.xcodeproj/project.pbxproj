@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B6177612A3F383A003E0740 /* Volt Lines - Case Study.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1B6177602A3F383A003E0740 /* Volt Lines - Case Study.pdf */; };
+		1B6177632A3F48B1003E0740 /* StationMapNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6177622A3F48B1003E0740 /* StationMapNetworkManager.swift */; };
+		1B6177652A3F5538003E0740 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1B6177642A3F5537003E0740 /* README.md */; };
+		9ED66FCF1AC56881F92F5B61 /* Pods_VoltLines_CaseStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AEA12368D58E0D7F3D73DC /* Pods_VoltLines_CaseStudy.framework */; };
+		BF05A14129F820BD00C681E6 /* MapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = BF05A14029F820BD00C681E6 /* MapStyle.json */; };
+		BF05A14429F82F7200C681E6 /* TripListHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05A14229F82F7200C681E6 /* TripListHeaderCell.swift */; };
+		BF05A14529F82F7200C681E6 /* TripListHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF05A14329F82F7200C681E6 /* TripListHeaderCell.xib */; };
+		BF7EE3BF29F6990000BA77E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EE3BE29F6990000BA77E6 /* AppDelegate.swift */; };
+		BF7EE3C129F6990000BA77E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EE3C029F6990000BA77E6 /* SceneDelegate.swift */; };
+		BF7EE3C329F6990000BA77E6 /* StationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EE3C229F6990000BA77E6 /* StationMapViewController.swift */; };
+		BF7EE3C829F6990100BA77E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7EE3C729F6990100BA77E6 /* Assets.xcassets */; };
+		BF7EE3CB29F6990100BA77E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7EE3C929F6990100BA77E6 /* LaunchScreen.storyboard */; };
+		BF7EE3EF29F6AA0D00BA77E6 /* ViewControllerMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EE3EE29F6AA0D00BA77E6 /* ViewControllerMaker.swift */; };
+		BF8E997829F8464800D743B0 /* TripListHeaderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E997729F8464800D743B0 /* TripListHeaderCellViewModel.swift */; };
+		BF8E997A29F84F5800D743B0 /* TripListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E997929F84F5800D743B0 /* TripListParser.swift */; };
+		BF9E002129F6C93100C9A20D /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E002029F6C93100C9A20D /* CustomAlertView.swift */; };
+		BF9E002329F6C95F00C9A20D /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E002229F6C95F00C9A20D /* AlertItem.swift */; };
+		BF9E003029F6CD8D00C9A20D /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E002F29F6CD8D00C9A20D /* StationModel.swift */; };
+		BF9E003229F6CDBA00C9A20D /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E003129F6CDBA00C9A20D /* TripModel.swift */; };
+		BF9E003C29F6D14B00C9A20D /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E003B29F6D14B00C9A20D /* TripListViewController.swift */; };
+		BF9E003F29F6D1A700C9A20D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E003E29F6D1A700C9A20D /* Constants.swift */; };
+		BFB9374B29F707BE00B4DDE1 /* StationMapAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9374A29F707BE00B4DDE1 /* StationMapAPI.swift */; };
+		BFB9375429F7185D00B4DDE1 /* StationMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9375329F7185D00B4DDE1 /* StationMapPresenter.swift */; };
+		BFB9375829F7266100B4DDE1 /* TripListMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9375729F7266100B4DDE1 /* TripListMainViewModel.swift */; };
+		BFB9376129F72C8400B4DDE1 /* TripListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376029F72C8400B4DDE1 /* TripListRouter.swift */; };
+		BFB9376329F72C8D00B4DDE1 /* TripListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376229F72C8D00B4DDE1 /* TripListManager.swift */; };
+		BFB9376529F72CA000B4DDE1 /* TripListNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376429F72CA000B4DDE1 /* TripListNetworkManager.swift */; };
+		BFB9376729F72FD500B4DDE1 /* TripListViewController+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376629F72FD500B4DDE1 /* TripListViewController+Setup.swift */; };
+		BFB9376929F72FEA00B4DDE1 /* TripListViewController+Bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376829F72FEA00B4DDE1 /* TripListViewController+Bindings.swift */; };
+		BFB9376C29F7325C00B4DDE1 /* TripListCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376B29F7325C00B4DDE1 /* TripListCellType.swift */; };
+		BFB9376E29F735B300B4DDE1 /* TripListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376D29F735B300B4DDE1 /* TripListDataSource.swift */; };
+		BFB9377029F7382A00B4DDE1 /* TripListViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9376F29F7382A00B4DDE1 /* TripListViewController+TableViewDelegate.swift */; };
+		BFB9377229F738DF00B4DDE1 /* TripListBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9377129F738DF00B4DDE1 /* TripListBaseTableViewCell.swift */; };
+		BFB9377529F7390300B4DDE1 /* TripListTripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9377329F7390300B4DDE1 /* TripListTripCell.swift */; };
+		BFB9377629F7390300B4DDE1 /* TripListTripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB9377429F7390300B4DDE1 /* TripListTripCell.xib */; };
+		BFB9377829F73B7F00B4DDE1 /* TripListBaseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9377729F73B7F00B4DDE1 /* TripListBaseCellViewModel.swift */; };
+		BFB9377A29F73D2C00B4DDE1 /* TripListTripCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9377929F73D2C00B4DDE1 /* TripListTripCellViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		191DE5AFFC585BF6BDF8465D /* Pods-VoltLines-CaseStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltLines-CaseStudy.debug.xcconfig"; path = "Target Support Files/Pods-VoltLines-CaseStudy/Pods-VoltLines-CaseStudy.debug.xcconfig"; sourceTree = "<group>"; };
+		1B6177602A3F383A003E0740 /* Volt Lines - Case Study.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Volt Lines - Case Study.pdf"; sourceTree = "<group>"; };
+		1B6177622A3F48B1003E0740 /* StationMapNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationMapNetworkManager.swift; sourceTree = "<group>"; };
+		1B6177642A3F5537003E0740 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BF05A14029F820BD00C681E6 /* MapStyle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MapStyle.json; sourceTree = "<group>"; };
+		BF05A14229F82F7200C681E6 /* TripListHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListHeaderCell.swift; sourceTree = "<group>"; };
+		BF05A14329F82F7200C681E6 /* TripListHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripListHeaderCell.xib; sourceTree = "<group>"; };
+		BF7EE3BB29F6990000BA77E6 /* VoltLines-CaseStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VoltLines-CaseStudy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7EE3BE29F6990000BA77E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF7EE3C029F6990000BA77E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF7EE3C229F6990000BA77E6 /* StationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapViewController.swift; sourceTree = "<group>"; };
+		BF7EE3C729F6990100BA77E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF7EE3CA29F6990100BA77E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF7EE3CC29F6990100BA77E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF7EE3EE29F6AA0D00BA77E6 /* ViewControllerMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMaker.swift; sourceTree = "<group>"; };
+		BF8E997729F8464800D743B0 /* TripListHeaderCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListHeaderCellViewModel.swift; sourceTree = "<group>"; };
+		BF8E997929F84F5800D743B0 /* TripListParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListParser.swift; sourceTree = "<group>"; };
+		BF9E002029F6C93100C9A20D /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		BF9E002229F6C95F00C9A20D /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		BF9E002F29F6CD8D00C9A20D /* StationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
+		BF9E003129F6CDBA00C9A20D /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		BF9E003B29F6D14B00C9A20D /* TripListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
+		BF9E003E29F6D1A700C9A20D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BFB9374A29F707BE00B4DDE1 /* StationMapAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapAPI.swift; sourceTree = "<group>"; };
+		BFB9375329F7185D00B4DDE1 /* StationMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapPresenter.swift; sourceTree = "<group>"; };
+		BFB9375729F7266100B4DDE1 /* TripListMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListMainViewModel.swift; sourceTree = "<group>"; };
+		BFB9376029F72C8400B4DDE1 /* TripListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListRouter.swift; sourceTree = "<group>"; };
+		BFB9376229F72C8D00B4DDE1 /* TripListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListManager.swift; sourceTree = "<group>"; };
+		BFB9376429F72CA000B4DDE1 /* TripListNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListNetworkManager.swift; sourceTree = "<group>"; };
+		BFB9376629F72FD500B4DDE1 /* TripListViewController+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TripListViewController+Setup.swift"; sourceTree = "<group>"; };
+		BFB9376829F72FEA00B4DDE1 /* TripListViewController+Bindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TripListViewController+Bindings.swift"; sourceTree = "<group>"; };
+		BFB9376B29F7325C00B4DDE1 /* TripListCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListCellType.swift; sourceTree = "<group>"; };
+		BFB9376D29F735B300B4DDE1 /* TripListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListDataSource.swift; sourceTree = "<group>"; };
+		BFB9376F29F7382A00B4DDE1 /* TripListViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TripListViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		BFB9377129F738DF00B4DDE1 /* TripListBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListBaseTableViewCell.swift; sourceTree = "<group>"; };
+		BFB9377329F7390300B4DDE1 /* TripListTripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListTripCell.swift; sourceTree = "<group>"; };
+		BFB9377429F7390300B4DDE1 /* TripListTripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripListTripCell.xib; sourceTree = "<group>"; };
+		BFB9377729F73B7F00B4DDE1 /* TripListBaseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListBaseCellViewModel.swift; sourceTree = "<group>"; };
+		BFB9377929F73D2C00B4DDE1 /* TripListTripCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListTripCellViewModel.swift; sourceTree = "<group>"; };
+		C9AEA12368D58E0D7F3D73DC /* Pods_VoltLines_CaseStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoltLines_CaseStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EA6737229FDB6A5B457645 /* Pods-VoltLines-CaseStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltLines-CaseStudy.release.xcconfig"; path = "Target Support Files/Pods-VoltLines-CaseStudy/Pods-VoltLines-CaseStudy.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF7EE3B829F6990000BA77E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED66FCF1AC56881F92F5B61 /* Pods_VoltLines_CaseStudy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		200BBC03954432B5F4576FF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				191DE5AFFC585BF6BDF8465D /* Pods-VoltLines-CaseStudy.debug.xcconfig */,
+				E8EA6737229FDB6A5B457645 /* Pods-VoltLines-CaseStudy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD2651BF6064DD26AF019692 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9AEA12368D58E0D7F3D73DC /* Pods_VoltLines_CaseStudy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF167F4729F88E56002E6FB9 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				BFB9376B29F7325C00B4DDE1 /* TripListCellType.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		BF167F4829F88E83002E6FB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B6177602A3F383A003E0740 /* Volt Lines - Case Study.pdf */,
+				BF7EE3BE29F6990000BA77E6 /* AppDelegate.swift */,
+				BF7EE3C029F6990000BA77E6 /* SceneDelegate.swift */,
+				BF7EE3C729F6990100BA77E6 /* Assets.xcassets */,
+				BF7EE3C929F6990100BA77E6 /* LaunchScreen.storyboard */,
+				BF7EE3CC29F6990100BA77E6 /* Info.plist */,
+				BF05A14029F820BD00C681E6 /* MapStyle.json */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF167F4A29F8A0A2002E6FB9 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				BF9E002229F6C95F00C9A20D /* AlertItem.swift */,
+				BF9E002029F6C93100C9A20D /* CustomAlertView.swift */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		BF7EE3B229F6990000BA77E6 = {
+			isa = PBXGroup;
+			children = (
+				1B6177642A3F5537003E0740 /* README.md */,
+				BF7EE3BD29F6990000BA77E6 /* VoltLines-CaseStudy */,
+				BF7EE3BC29F6990000BA77E6 /* Products */,
+				200BBC03954432B5F4576FF4 /* Pods */,
+				BD2651BF6064DD26AF019692 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF7EE3BC29F6990000BA77E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF7EE3BB29F6990000BA77E6 /* VoltLines-CaseStudy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF7EE3BD29F6990000BA77E6 /* VoltLines-CaseStudy */ = {
+			isa = PBXGroup;
+			children = (
+				BF7EE3F129F6AB6800BA77E6 /* General Usage */,
+				BF7EE3F029F6AB5600BA77E6 /* Screens */,
+				BF167F4829F88E83002E6FB9 /* Supporting Files */,
+			);
+			path = "VoltLines-CaseStudy";
+			sourceTree = "<group>";
+		};
+		BF7EE3F029F6AB5600BA77E6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BF7EE3F329F6AB8600BA77E6 /* StationMap */,
+				BF7EE3F229F6AB7900BA77E6 /* TripList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BF7EE3F129F6AB6800BA77E6 /* General Usage */ = {
+			isa = PBXGroup;
+			children = (
+				BF7EE3EE29F6AA0D00BA77E6 /* ViewControllerMaker.swift */,
+				BF9E001F29F6C91D00C9A20D /* General Views */,
+				BF9E003D29F6D19B00C9A20D /* Helpers */,
+			);
+			path = "General Usage";
+			sourceTree = "<group>";
+		};
+		BF7EE3F229F6AB7900BA77E6 /* TripList */ = {
+			isa = PBXGroup;
+			children = (
+				BF9E003629F6D0AF00C9A20D /* General */,
+				BFB9376A29F7325200B4DDE1 /* Model */,
+				BF9E003429F6D09C00C9A20D /* View */,
+				BF9E003529F6D0A600C9A20D /* ViewModel */,
+			);
+			path = TripList;
+			sourceTree = "<group>";
+		};
+		BF7EE3F329F6AB8600BA77E6 /* StationMap */ = {
+			isa = PBXGroup;
+			children = (
+				BF9E002E29F6CCCD00C9A20D /* Model */,
+				BF9E002A29F6CC8900C9A20D /* View */,
+				BF9E002B29F6CC9400C9A20D /* Presenter */,
+				BF9E002D29F6CCC500C9A20D /* Networking */,
+			);
+			path = StationMap;
+			sourceTree = "<group>";
+		};
+		BF9E001F29F6C91D00C9A20D /* General Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF167F4A29F8A0A2002E6FB9 /* AlertView */,
+			);
+			path = "General Views";
+			sourceTree = "<group>";
+		};
+		BF9E002A29F6CC8900C9A20D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF7EE3C229F6990000BA77E6 /* StationMapViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF9E002B29F6CC9400C9A20D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BFB9375329F7185D00B4DDE1 /* StationMapPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BF9E002D29F6CCC500C9A20D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1B6177622A3F48B1003E0740 /* StationMapNetworkManager.swift */,
+				BFB9374A29F707BE00B4DDE1 /* StationMapAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BF9E002E29F6CCCD00C9A20D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF9E002F29F6CD8D00C9A20D /* StationModel.swift */,
+				BF9E003129F6CDBA00C9A20D /* TripModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF9E003429F6D09C00C9A20D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF9E003829F6D0C400C9A20D /* Main */,
+				BF9E003729F6D0BE00C9A20D /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF9E003529F6D0A600C9A20D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF9E003929F6D0CF00C9A20D /* Main */,
+				BF9E003A29F6D0D700C9A20D /* Cells */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF9E003629F6D0AF00C9A20D /* General */ = {
+			isa = PBXGroup;
+			children = (
+				BFB9376229F72C8D00B4DDE1 /* TripListManager.swift */,
+				BFB9376029F72C8400B4DDE1 /* TripListRouter.swift */,
+				BF8E997929F84F5800D743B0 /* TripListParser.swift */,
+				BFB9376429F72CA000B4DDE1 /* TripListNetworkManager.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		BF9E003729F6D0BE00C9A20D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BFB9377129F738DF00B4DDE1 /* TripListBaseTableViewCell.swift */,
+				BFB9377329F7390300B4DDE1 /* TripListTripCell.swift */,
+				BFB9377429F7390300B4DDE1 /* TripListTripCell.xib */,
+				BF05A14229F82F7200C681E6 /* TripListHeaderCell.swift */,
+				BF05A14329F82F7200C681E6 /* TripListHeaderCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BF9E003829F6D0C400C9A20D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BF9E003B29F6D14B00C9A20D /* TripListViewController.swift */,
+				BFB9376629F72FD500B4DDE1 /* TripListViewController+Setup.swift */,
+				BFB9376829F72FEA00B4DDE1 /* TripListViewController+Bindings.swift */,
+				BFB9376F29F7382A00B4DDE1 /* TripListViewController+TableViewDelegate.swift */,
+				BFB9376D29F735B300B4DDE1 /* TripListDataSource.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BF9E003929F6D0CF00C9A20D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BFB9375729F7266100B4DDE1 /* TripListMainViewModel.swift */,
+				BFB9377729F73B7F00B4DDE1 /* TripListBaseCellViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BF9E003A29F6D0D700C9A20D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BFB9377929F73D2C00B4DDE1 /* TripListTripCellViewModel.swift */,
+				BF8E997729F8464800D743B0 /* TripListHeaderCellViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BF9E003D29F6D19B00C9A20D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BF9E003E29F6D1A700C9A20D /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BFB9376A29F7325200B4DDE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF167F4729F88E56002E6FB9 /* General */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF7EE3BA29F6990000BA77E6 /* VoltLines-CaseStudy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF7EE3E529F6990100BA77E6 /* Build configuration list for PBXNativeTarget "VoltLines-CaseStudy" */;
+			buildPhases = (
+				DB0367BE687A08B27BF216F4 /* [CP] Check Pods Manifest.lock */,
+				BF7EE3B729F6990000BA77E6 /* Sources */,
+				BF7EE3B829F6990000BA77E6 /* Frameworks */,
+				BF7EE3B929F6990000BA77E6 /* Resources */,
+				14E96F7F21A39984B8DE2867 /* [CP] Embed Pods Frameworks */,
+				653DE440D26930F9D7D2EF12 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VoltLines-CaseStudy";
+			productName = Stations;
+			productReference = BF7EE3BB29F6990000BA77E6 /* VoltLines-CaseStudy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF7EE3B329F6990000BA77E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BF7EE3BA29F6990000BA77E6 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = BF7EE3B629F6990000BA77E6 /* Build configuration list for PBXProject "VoltLines-CaseStudy" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF7EE3B229F6990000BA77E6;
+			productRefGroup = BF7EE3BC29F6990000BA77E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF7EE3BA29F6990000BA77E6 /* VoltLines-CaseStudy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF7EE3B929F6990000BA77E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7EE3CB29F6990100BA77E6 /* LaunchScreen.storyboard in Resources */,
+				1B6177612A3F383A003E0740 /* Volt Lines - Case Study.pdf in Resources */,
+				BFB9377629F7390300B4DDE1 /* TripListTripCell.xib in Resources */,
+				1B6177652A3F5538003E0740 /* README.md in Resources */,
+				BF7EE3C829F6990100BA77E6 /* Assets.xcassets in Resources */,
+				BF05A14529F82F7200C681E6 /* TripListHeaderCell.xib in Resources */,
+				BF05A14129F820BD00C681E6 /* MapStyle.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14E96F7F21A39984B8DE2867 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoltLines-CaseStudy/Pods-VoltLines-CaseStudy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoltLines-CaseStudy/Pods-VoltLines-CaseStudy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoltLines-CaseStudy/Pods-VoltLines-CaseStudy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		653DE440D26930F9D7D2EF12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoltLines-CaseStudy/Pods-VoltLines-CaseStudy-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoltLines-CaseStudy/Pods-VoltLines-CaseStudy-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoltLines-CaseStudy/Pods-VoltLines-CaseStudy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB0367BE687A08B27BF216F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoltLines-CaseStudy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF7EE3B729F6990000BA77E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9E003229F6CDBA00C9A20D /* TripModel.swift in Sources */,
+				BFB9377529F7390300B4DDE1 /* TripListTripCell.swift in Sources */,
+				BFB9376129F72C8400B4DDE1 /* TripListRouter.swift in Sources */,
+				BFB9375829F7266100B4DDE1 /* TripListMainViewModel.swift in Sources */,
+				BFB9377829F73B7F00B4DDE1 /* TripListBaseCellViewModel.swift in Sources */,
+				BFB9377029F7382A00B4DDE1 /* TripListViewController+TableViewDelegate.swift in Sources */,
+				BFB9376729F72FD500B4DDE1 /* TripListViewController+Setup.swift in Sources */,
+				BFB9376929F72FEA00B4DDE1 /* TripListViewController+Bindings.swift in Sources */,
+				1B6177632A3F48B1003E0740 /* StationMapNetworkManager.swift in Sources */,
+				BFB9376E29F735B300B4DDE1 /* TripListDataSource.swift in Sources */,
+				BF9E002129F6C93100C9A20D /* CustomAlertView.swift in Sources */,
+				BF7EE3C329F6990000BA77E6 /* StationMapViewController.swift in Sources */,
+				BFB9377A29F73D2C00B4DDE1 /* TripListTripCellViewModel.swift in Sources */,
+				BFB9375429F7185D00B4DDE1 /* StationMapPresenter.swift in Sources */,
+				BF9E002329F6C95F00C9A20D /* AlertItem.swift in Sources */,
+				BFB9376329F72C8D00B4DDE1 /* TripListManager.swift in Sources */,
+				BF05A14429F82F7200C681E6 /* TripListHeaderCell.swift in Sources */,
+				BF7EE3BF29F6990000BA77E6 /* AppDelegate.swift in Sources */,
+				BFB9377229F738DF00B4DDE1 /* TripListBaseTableViewCell.swift in Sources */,
+				BF9E003F29F6D1A700C9A20D /* Constants.swift in Sources */,
+				BF9E003029F6CD8D00C9A20D /* StationModel.swift in Sources */,
+				BFB9374B29F707BE00B4DDE1 /* StationMapAPI.swift in Sources */,
+				BFB9376529F72CA000B4DDE1 /* TripListNetworkManager.swift in Sources */,
+				BF7EE3C129F6990000BA77E6 /* SceneDelegate.swift in Sources */,
+				BF8E997A29F84F5800D743B0 /* TripListParser.swift in Sources */,
+				BF9E003C29F6D14B00C9A20D /* TripListViewController.swift in Sources */,
+				BF7EE3EF29F6AA0D00BA77E6 /* ViewControllerMaker.swift in Sources */,
+				BF8E997829F8464800D743B0 /* TripListHeaderCellViewModel.swift in Sources */,
+				BFB9376C29F7325C00B4DDE1 /* TripListCellType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF7EE3C929F6990100BA77E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF7EE3CA29F6990100BA77E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF7EE3E329F6990100BA77E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF7EE3E429F6990100BA77E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF7EE3E629F6990100BA77E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 191DE5AFFC585BF6BDF8465D /* Pods-VoltLines-CaseStudy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 927YGY67XQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VoltLines-CaseStudy/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Volt Lines";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location data will be used to find nearby stations";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Murmeko.VoltLines-CaseStudy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF7EE3E729F6990100BA77E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8EA6737229FDB6A5B457645 /* Pods-VoltLines-CaseStudy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 927YGY67XQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VoltLines-CaseStudy/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Volt Lines";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location data will be used to find nearby stations";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Murmeko.VoltLines-CaseStudy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF7EE3B629F6990000BA77E6 /* Build configuration list for PBXProject "VoltLines-CaseStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF7EE3E329F6990100BA77E6 /* Debug */,
+				BF7EE3E429F6990100BA77E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF7EE3E529F6990100BA77E6 /* Build configuration list for PBXNativeTarget "VoltLines-CaseStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF7EE3E629F6990100BA77E6 /* Debug */,
+				BF7EE3E729F6990100BA77E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF7EE3B329F6990000BA77E6 /* Project object */;
+}

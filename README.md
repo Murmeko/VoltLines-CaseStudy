@@ -14,8 +14,7 @@
 
 ## Techs:
 
-* MVVM+Routers architecture.
-* Protocol-Oriented design.
+* MVP architecture.
 * Google Maps SDK.
 * Custom alert view.
 * Programmatic UI + Xibs(for cells).
